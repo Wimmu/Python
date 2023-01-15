@@ -6,6 +6,6 @@ g_luoti = luoti*13.3
 g_naula = naula*(32*13.3)
 g_leiviskä = leiviskä*(20*32*13.3)
 
-yht = (g_leiviskä+g_naula+g_luoti)/1000
+yht = g_leiviskä+g_naula+g_luoti
 
-print(yht)
+print(f"Paino on nykymittoissa: {yht // 1000:.0f}kg ja {yht % 1000:.2f}g")

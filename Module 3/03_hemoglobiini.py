@@ -6,12 +6,12 @@ if skp == "Nainen":
         print("Hemoglobiinisi on normaali.")
     elif hem < 117:
         print("Hemoglobiinisi on alhainen.")
-    elif hem > 175:
+    else:
         print("Hemoglobiinisi on korkea.")
 else:
     if 134 <= hem <= 195:
         print("Hemoglobiinisi on normaali.")
     elif hem < 134:
         print("Hemoglobiinisi on alhainen.")
-    elif hem > 195:
+    else:
         print("Hemoglobiinisi on korkea.")
