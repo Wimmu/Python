@@ -20,8 +20,8 @@ if pituus <165:
 if pituus >184:
     print("Olet pitkä")
     
-"""
-        # PITUUS OHJELMA AND
+""""""
+        # PITUUS OHJELMA (AND)
 
 pituus = int(input("Kuinka pitkä olet?"))
 
@@ -32,8 +32,8 @@ elif pituus <165:
 else:
     print("Olet pitkä")
 
-"""
-        # PITUUS OHJELMA OR
+""""""
+        # PITUUS OHJELMA (OR)
 
 pituus = int(input("Kuinka pitkä olet?"))
 
