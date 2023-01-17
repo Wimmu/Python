@@ -1,5 +1,5 @@
 hytti = input("Mikä on hyttiluokkasi (LUX, A, B, C)?")
-
+hytti = hytti.upper() # MUUTTAA ISOIKSI KIRJAIMIKSI
 if hytti == "LUX":
     print("LUX on parvekkeellinen hytti yläkannella.")
 elif hytti == "A":

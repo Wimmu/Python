@@ -1,6 +1,6 @@
-num1 = float(input("Anna ensimmäinen numero:"))
-num2 = float(input("Anna toinen numero:"))
-num3 = float(input("Anna kolmas numero:"))
+num1 = int(input("Anna ensimmäinen numero:"))
+num2 = int(input("Anna toinen numero:"))
+num3 = int(input("Anna kolmas numero:"))
 
 summa = num1+num2+num3
 tulo = num1*num2*num3
