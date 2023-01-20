@@ -1,19 +1,18 @@
 luku = int(input("Syötä kokonaisluku:"))
-i = 1
-luvut = []
+kerratjaollinen = 0
+jaetaan = luku
 
-while i < 1000:
-    if i == 1:
-        i = i + 1
+while jaetaan != 0:
+    if luku % jaetaan == 0:
+        kerratjaollinen = kerratjaollinen + 1
+        jaetaan = jaetaan - 1
     else:
-        luvut.append(i)
-        i = i + 1
+        jaetaan = jaetaan - 1
 
-for n in luvut:
-    if luku % n == 0:
-        print("Ei ole alkuluku")
-    else:
-        print("On alkuluku")
+if kerratjaollinen < 3:
+    print("Luku on alkuluku")
+else:
+    print("Luku ei ole alkuluku")
 
 
 
