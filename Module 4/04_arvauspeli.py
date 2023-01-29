@@ -1,6 +1,6 @@
 import random
 
-numero = random.randint(1, 1000)
+numero = random.randint(1, 10)
 arvaus = float(input("Arvaa luku:"))
 
 while arvaus != numero:

@@ -9,7 +9,7 @@ while jaetaan != 0:
     else:
         jaetaan = jaetaan - 1
 
-if kerratjaollinen < 3:
+if kerratjaollinen == 2:
     print("Luku on alkuluku")
 else:
     print("Luku ei ole alkuluku")
