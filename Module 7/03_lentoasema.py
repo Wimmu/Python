@@ -1,4 +1,4 @@
-lentokentät = {"HEL":"Helsinki"}
+lentokentät = {"EFHK":"Helsinki-Vantaa"}
 tehdään = 0
 def uusikenttä():
     u_nimi = input("Anna lentoaseman nimi:")
