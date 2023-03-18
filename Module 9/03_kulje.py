@@ -17,7 +17,8 @@ class Auto:
 
 mersu = Auto("ABC-123", 142)
 
-mersu.kiihdyntä(30)
+
+mersu.kiihdyntä(60)
 mersu.kulje(1.5)
 
 print(mersu.kuljettumatka)
