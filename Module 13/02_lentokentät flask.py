@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, jsonify, request
 import mysql.connector
 
 app = Flask(__name__)
@@ -20,15 +20,17 @@ def alkuluku():
     # print(sql)
     kursori = yhteys.cursor()
     kursori.execute(sql)
-    tulos = kursori.fetchall()
+    tulos = kursori.fetchone()
 
     vastaus = {
-        "luku1": tulos
+        "ICAO:": koodi,
+        "Name:": tulos[0],
+        "Municipality:": tulos[1]
     }
 
-    return vastaus
+    return jsonify(vastaus)
 
-# SELAIMEEN: http://127.0.0.1:3000/alkuluku?luku1=4
+# SELAIMEEN: http://127.0.0.1:3000/haekentta?koodi=4
 
 if __name__ == '__main__':
     app.run(use_reloader=True, host='127.0.0.1', port=3000)
