@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1>Greeting</h1>
+<p id="target"></p>
+<p id="summa"></p>
+<script>
+    'use strict';
+    console.log("Moroooo");
+    const name = prompt('Syötä nimesi:');
+    document.querySelector('#target').innerHTML = 'Huomenta, ' + name + '!';
+
+    let x = parseInt(prompt('anna ensimmäinen luku:'));
+    let y = parseInt(prompt('anna toinen luku:'));
+    let summa = x + y;
+
+    document.querySelector('#summa').innerHTML = 'Summa:' + summa;
+</script>
+</body>
+</html>
